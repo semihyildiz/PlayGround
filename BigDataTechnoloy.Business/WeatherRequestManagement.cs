@@ -17,15 +17,9 @@ namespace BigDataTechnoloy.Business
     {
         //private readonly IServiceProvider _serviceProvider;
         public Worker worker { get; set; }
-        public WeatherRequestManagement()
+        public WeatherRequestManagement(Worker _worker)
         {
-            //IServiceCollection services = new ServiceCollection();
-            //var DbContextDIService = services.BuildServiceProvider();
-            //var sd = typeof(Worker);
-            ////var dss = DbContextDIService.GetRequiredService(typeof(Worker));
-            //var ds = DbContextDIService.GetServices(typeof(Worker));
-            //worker =(Worker) DbContextDIService.GetService(typeof(Worker));
-            worker = new Worker();
+            worker = _worker;
         }
         public Result<WeatherForecast> GetWeatherInformation(WeatherRequest request)
         {
@@ -49,7 +43,8 @@ namespace BigDataTechnoloy.Business
                 }
 
                 /*dbde arama işlemi(son 24 saatte)*/
-                request.StartDate = DateTime.Now.AddHours(-24);
+               request.StartDate = DateTime.Now.AddHours(-24);
+
                 var existingDbRecord = worker.WeatherForecast.GetWeatherForecast(request).OrderByDescending(c => c.RecordDate).FirstOrDefault();
 
                 if (existingDbRecord != null)
@@ -60,7 +55,7 @@ namespace BigDataTechnoloy.Business
                     return result;
                 }
 
-
+                /*3. parti servislerden sorgulama*/
                 LocationIQManagement locationMan = new LocationIQManagement();//DI ekle. 
                 var locations = locationMan.FindLocation(request.Location);
 

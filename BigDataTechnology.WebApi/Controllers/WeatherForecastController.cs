@@ -13,6 +13,8 @@ using BigDataTechnology.Entities;
 using BigDataTechnology.Entities.Models.Requests;
 using BigDataTechnoloy.Business.Hubs;
 using System.Text.Json;
+using BigDataTechnology.DAL.Abstract;
+using BigDataTechnology.DAL;
 
 namespace BigDataTechnology.WebApi.Controllers
 {
@@ -47,28 +49,31 @@ namespace BigDataTechnology.WebApi.Controllers
         //} 
         #endregion
 
-        public WeatherForecastController(IChatHubDispatcher chatHubDispatcher)
+        public WeatherForecastController(IChatHubDispatcher chatHubDispatcher, Worker worker)
         {
             _chatHubDispatcher = chatHubDispatcher;
+            _Worker = worker;
         }
+
+        private readonly Worker _Worker;
         private readonly IChatHubDispatcher _chatHubDispatcher;
         [HttpGet]
-        public  Result<WeatherForecast> Get(string location)
+        public Result<WeatherForecast> Get(string location)
         {
             string TranscationId = Guid.NewGuid().ToString();
-  
+
             Task.Factory.StartNew(() =>
             {
-                _chatHubDispatcher.SendAllClients(TranscationId+ DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff")+" Request=", location);
+                _chatHubDispatcher.SendAllClients(TranscationId + DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff") + " Request=", location);
             });
 
-            WeatherRequestManagement weatherMan = new WeatherRequestManagement();
+            WeatherRequestManagement weatherMan = new WeatherRequestManagement(_Worker);
             WeatherRequest request = new WeatherRequest();
             request.Location = location;
-            var result= weatherMan.GetWeatherInformation(request);
-            
+            var result = weatherMan.GetWeatherInformation(request);
+
             /*SignalR notification*/
-             _chatHubDispatcher.SendAllClients(TranscationId + DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff")+" Response=", JsonSerializer.Serialize(result));
+            _chatHubDispatcher.SendAllClients(TranscationId + DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff") + " Response=", JsonSerializer.Serialize(result));
 
 
             /*middlewaree almak lazım*/

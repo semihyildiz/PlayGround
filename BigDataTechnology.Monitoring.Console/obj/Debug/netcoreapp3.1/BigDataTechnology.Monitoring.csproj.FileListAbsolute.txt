@@ -32,3 +32,4 @@ D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\bin\
 D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
 D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\obj\Debug\netcoreapp3.1\BigDataTechnology.Monitoring.csprojAssemblyReference.cache

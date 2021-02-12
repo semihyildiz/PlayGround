@@ -37,9 +37,9 @@ namespace BigDataTechnology.WebApi
             services.AddSingleton<IChatHubDispatcher, ChatHubDispatcher>();
 
             ///*Migration*/
-            services.AddDbContext<BigDataTechnologyDbContext>();
+            //services.AddDbContext<BigDataTechnologyDbContext>();
 
-            //services.AddSingleton<IWorker,Worker>();
+            services.AddSingleton<Worker>();
             InMemory.Initial();
 
 
