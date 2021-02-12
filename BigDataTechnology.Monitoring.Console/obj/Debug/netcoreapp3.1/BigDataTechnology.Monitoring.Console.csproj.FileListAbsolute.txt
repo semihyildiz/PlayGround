@@ -1,3 +1,4 @@
 D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\obj\Debug\netcoreapp3.1\BigDataTechnology.Monitoring.Console.AssemblyInfoInputs.cache
 D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\obj\Debug\netcoreapp3.1\BigDataTechnology.Monitoring.Console.AssemblyInfo.cs
 D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\obj\Debug\netcoreapp3.1\BigDataTechnology.Monitoring.Console.csproj.CoreCompileInputs.cache
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Monitoring.Console\obj\Debug\netcoreapp3.1\BigDataTechnology.Monitoring.Console.csprojAssemblyReference.cache

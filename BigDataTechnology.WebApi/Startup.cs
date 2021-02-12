@@ -2,6 +2,7 @@ using BigDataTechnology.DAL;
 using BigDataTechnology.DAL.Abstract;
 using BigDataTechnology.DATA;
 using BigDataTechnology.Entities;
+using BigDataTechnoloy.Business.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +32,8 @@ namespace BigDataTechnology.WebApi
             AppGlobal.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
 
             services.AddControllers();
+            services.AddSignalR();
+            services.AddSingleton<IChatHubDispatcher, ChatHubDispatcher>();
 
             /*Farklý Db contextler içeri girebilir*/
             services.AddDbContext<BigDataTechnologyDbContext>();
@@ -55,13 +58,10 @@ namespace BigDataTechnology.WebApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/chathub");
             });
 
-            ///test db connection
-            //using (Worker worker = new Worker())
-            //{
-            //  var ds=  worker.WeatherForecast.Get(1);
-            //}
+
         }
     }
 }

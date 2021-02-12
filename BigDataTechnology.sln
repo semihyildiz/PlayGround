@@ -5,15 +5,15 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigDataTechnology.WebApi", "BigDataTechnology.WebApi\BigDataTechnology.WebApi.csproj", "{F9878B1D-D618-4829-A5BC-DA25C1F7BE06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDataTechnology.Entities", "BigDataTechnology.Entities\BigDataTechnology.Entities.csproj", "{E9556BBA-4810-473F-A019-759CA6163A20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigDataTechnology.Entities", "BigDataTechnology.Entities\BigDataTechnology.Entities.csproj", "{E9556BBA-4810-473F-A019-759CA6163A20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDataTechnology.DATA", "BigDataTechnology.DATA\BigDataTechnology.DATA.csproj", "{D5225AED-BC93-49A5-8986-F6E2F170778C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigDataTechnology.DATA", "BigDataTechnology.DATA\BigDataTechnology.DATA.csproj", "{D5225AED-BC93-49A5-8986-F6E2F170778C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDataTechnology.DAL", "BigDataTechnology.DAL\BigDataTechnology.DAL.csproj", "{BBC1D971-1C9D-453C-9A78-FD0F827CA82D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigDataTechnology.DAL", "BigDataTechnology.DAL\BigDataTechnology.DAL.csproj", "{BBC1D971-1C9D-453C-9A78-FD0F827CA82D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDataTechnoloy.Business", "BigDataTechnoloy.Business\BigDataTechnoloy.Business.csproj", "{38D1BC74-D6A4-48CA-9297-EFBD6E144C45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigDataTechnoloy.Business", "BigDataTechnoloy.Business\BigDataTechnoloy.Business.csproj", "{38D1BC74-D6A4-48CA-9297-EFBD6E144C45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDataTechnology.Monitoring.Console", "BigDataTechnology.Monitoring.Console\BigDataTechnology.Monitoring.Console.csproj", "{5EA53DB9-19F4-4413-821F-9A59F0F678FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDataTechnology.Monitoring", "BigDataTechnology.Monitoring.Console\BigDataTechnology.Monitoring.csproj", "{5EA53DB9-19F4-4413-821F-9A59F0F678FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -11,6 +11,8 @@ using System.Net.Http;
 using System.Net;
 using BigDataTechnology.Entities;
 using BigDataTechnology.Entities.Models.Requests;
+using BigDataTechnoloy.Business.Hubs;
+using System.Text.Json;
 
 namespace BigDataTechnology.WebApi.Controllers
 {
@@ -45,15 +47,29 @@ namespace BigDataTechnology.WebApi.Controllers
         //} 
         #endregion
 
-
-        [HttpGet]
-        public Result<WeatherForecast> Get(string location)
+        public WeatherForecastController(IChatHubDispatcher chatHubDispatcher)
         {
+            _chatHubDispatcher = chatHubDispatcher;
+        }
+        private readonly IChatHubDispatcher _chatHubDispatcher;
+        [HttpGet]
+        public  Result<WeatherForecast> Get(string location)
+        {
+            string TranscationId = Guid.NewGuid().ToString();
+  
+            Task.Factory.StartNew(() =>
+            {
+                _chatHubDispatcher.SendAllClients(TranscationId+ DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff")+" Request=", location);
+            });
+
+
             WeatherRequestManagement weatherMan = new WeatherRequestManagement();
             WeatherRequest request = new WeatherRequest();
             request.Location = location;
             var result= weatherMan.GetWeatherInformation(request);
             /*SignalR notification*/
+
+             _chatHubDispatcher.SendAllClients(TranscationId + DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff")+" Response=", JsonSerializer.Serialize(result));
 
             return result;
         }

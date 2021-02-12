@@ -31,6 +31,7 @@ namespace BigDataTechnoloy.Business
                 /*Cashde Ara varsa dön*/
 
 
+
                 LocationIQManagement locationMan = new LocationIQManagement();//DI ekle. 
                 var locations = locationMan.FindLocation(request.Location);
 
@@ -66,9 +67,6 @@ namespace BigDataTechnoloy.Business
                 /*dbye git*/
                 worker.WeatherForecast.Add(forecast);
                 worker.SaveChanges();
-
-
-
 
 
                 result.Object = forecast;
