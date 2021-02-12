@@ -1,3 +1,7 @@
+using BigDataTechnology.DAL;
+using BigDataTechnology.DAL.Abstract;
+using BigDataTechnology.DATA;
+using BigDataTechnology.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -24,8 +28,16 @@ namespace BigDataTechnology.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            AppGlobal.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
 
             services.AddControllers();
+
+            /*Farklý Db contextler içeri girebilir*/
+            services.AddDbContext<BigDataTechnologyDbContext>();
+
+            services.AddSingleton<IWorker,Worker>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +56,12 @@ namespace BigDataTechnology.WebApi
             {
                 endpoints.MapControllers();
             });
+
+            ///test db connection
+            //using (Worker worker = new Worker())
+            //{
+            //  var ds=  worker.WeatherForecast.Get(1);
+            //}
         }
     }
 }

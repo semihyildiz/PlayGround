@@ -1,0 +1,16 @@
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnoloy.Business.deps.json
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnoloy.Business.dll
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnoloy.Business.pdb
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnology.Entities.dll
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnology.Entities.pdb
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\obj\Debug\netcoreapp3.1\BigDataTechnoloy.Business.csprojAssemblyReference.cache
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\obj\Debug\netcoreapp3.1\BigDataTechnoloy.Business.AssemblyInfoInputs.cache
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\obj\Debug\netcoreapp3.1\BigDataTechnoloy.Business.AssemblyInfo.cs
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\obj\Debug\netcoreapp3.1\BigDataTechnoloy.Business.csproj.CoreCompileInputs.cache
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\obj\Debug\netcoreapp3.1\BigDataTechnoloy.Business.csproj.CopyComplete
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\obj\Debug\netcoreapp3.1\BigDataTechnoloy.Business.dll
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\obj\Debug\netcoreapp3.1\BigDataTechnoloy.Business.pdb
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnology.DAL.dll
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnology.DATA.dll
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnology.DAL.pdb
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnoloy.Business\bin\Debug\netcoreapp3.1\BigDataTechnology.DATA.pdb

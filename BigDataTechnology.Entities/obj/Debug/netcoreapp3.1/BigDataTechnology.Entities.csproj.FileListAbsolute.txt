@@ -1,0 +1,9 @@
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\bin\Debug\netcoreapp3.1\BigDataTechnology.Entities.deps.json
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\bin\Debug\netcoreapp3.1\BigDataTechnology.Entities.dll
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\bin\Debug\netcoreapp3.1\BigDataTechnology.Entities.pdb
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\obj\Debug\netcoreapp3.1\BigDataTechnology.Entities.AssemblyInfoInputs.cache
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\obj\Debug\netcoreapp3.1\BigDataTechnology.Entities.AssemblyInfo.cs
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\obj\Debug\netcoreapp3.1\BigDataTechnology.Entities.csproj.CoreCompileInputs.cache
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\obj\Debug\netcoreapp3.1\BigDataTechnology.Entities.dll
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\obj\Debug\netcoreapp3.1\BigDataTechnology.Entities.pdb
+D:\GitHub\BigDataTechnology\PlayGround\BigDataTechnology.Entities\obj\Debug\netcoreapp3.1\BigDataTechnology.Entities.csprojAssemblyReference.cache

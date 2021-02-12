@@ -1,17 +1,240 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s.yildiz.LOCAL\\Source\\Repos\\BigDataTechnology\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj": {}
+    "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s.yildiz.LOCAL\\Source\\Repos\\BigDataTechnology\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj": {
+    "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DAL\\BigDataTechnology.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s.yildiz.LOCAL\\Source\\Repos\\BigDataTechnology\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj",
-        "projectName": "BigDataTechnology.WebApi",
-        "projectPath": "C:\\Users\\s.yildiz.LOCAL\\Source\\Repos\\BigDataTechnology\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj",
+        "projectUniqueName": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DAL\\BigDataTechnology.DAL.csproj",
+        "projectName": "BigDataTechnology.DAL",
+        "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DAL\\BigDataTechnology.DAL.csproj",
         "packagesPath": "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s.yildiz.LOCAL\\Source\\Repos\\BigDataTechnology\\BigDataTechnology.WebApi\\obj\\",
+        "outputPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\s.yildiz.LOCAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Output\\Nugets": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DATA\\BigDataTechnology.DATA.csproj": {
+                "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DATA\\BigDataTechnology.DATA.csproj"
+              },
+              "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj": {
+                "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DATA\\BigDataTechnology.DATA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DATA\\BigDataTechnology.DATA.csproj",
+        "projectName": "BigDataTechnology.DATA",
+        "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DATA\\BigDataTechnology.DATA.csproj",
+        "packagesPath": "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DATA\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\s.yildiz.LOCAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Output\\Nugets": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj": {
+                "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj",
+        "projectName": "BigDataTechnology.Entities",
+        "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj",
+        "packagesPath": "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\s.yildiz.LOCAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Output\\Nugets": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj",
+        "projectName": "BigDataTechnology.WebApi",
+        "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj",
+        "packagesPath": "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -33,7 +256,20 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DAL\\BigDataTechnology.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DAL\\BigDataTechnology.DAL.csproj"
+              },
+              "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DATA\\BigDataTechnology.DATA.csproj": {
+                "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.DATA\\BigDataTechnology.DATA.csproj"
+              },
+              "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj": {
+                "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj"
+              },
+              "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnoloy.Business\\BigDataTechnoloy.Business.csproj": {
+                "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnoloy.Business\\BigDataTechnoloy.Business.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -45,6 +281,26 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,6 +315,80 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnoloy.Business\\BigDataTechnoloy.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnoloy.Business\\BigDataTechnoloy.Business.csproj",
+        "projectName": "BigDataTechnoloy.Business",
+        "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnoloy.Business\\BigDataTechnoloy.Business.csproj",
+        "packagesPath": "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnoloy.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\s.yildiz.LOCAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Output\\Nugets": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj": {
+                "projectPath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Entities\\BigDataTechnology.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
