@@ -2,6 +2,7 @@ using BigDataTechnology.DAL;
 using BigDataTechnology.DAL.Abstract;
 using BigDataTechnology.DATA;
 using BigDataTechnology.Entities;
+using BigDataTechnoloy.Business;
 using BigDataTechnoloy.Business.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,10 +36,11 @@ namespace BigDataTechnology.WebApi
             services.AddSignalR();
             services.AddSingleton<IChatHubDispatcher, ChatHubDispatcher>();
 
-            /*Farklý Db contextler içeri girebilir*/
+            ///*Migration*/
             services.AddDbContext<BigDataTechnologyDbContext>();
 
-            services.AddSingleton<IWorker,Worker>();
+            //services.AddSingleton<IWorker,Worker>();
+            InMemory.Initial();
 
 
         }

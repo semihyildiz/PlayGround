@@ -47,6 +47,9 @@ namespace BigDataTechnology.DATA.Migrations
                     b.Property<double>("LowestTempratureInThisWeek")
                         .HasColumnType("float");
 
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Location");

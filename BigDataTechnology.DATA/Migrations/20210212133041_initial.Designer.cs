@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BigDataTechnology.DATA.Migrations
 {
     [DbContext(typeof(BigDataTechnologyDbContext))]
-    [Migration("20210212071819_MyFirstMigration")]
-    partial class MyFirstMigration
+    [Migration("20210212133041_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,6 +48,9 @@ namespace BigDataTechnology.DATA.Migrations
 
                     b.Property<double>("LowestTempratureInThisWeek")
                         .HasColumnType("float");
+
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

@@ -62,14 +62,20 @@ namespace BigDataTechnology.WebApi.Controllers
                 _chatHubDispatcher.SendAllClients(TranscationId+ DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff")+" Request=", location);
             });
 
-
             WeatherRequestManagement weatherMan = new WeatherRequestManagement();
             WeatherRequest request = new WeatherRequest();
             request.Location = location;
             var result= weatherMan.GetWeatherInformation(request);
+            
             /*SignalR notification*/
-
              _chatHubDispatcher.SendAllClients(TranscationId + DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff")+" Response=", JsonSerializer.Serialize(result));
+
+
+            /*middlewaree almak lazım*/
+            Task.Factory.StartNew(() =>
+            {
+                InMemory.Flush();
+            });
 
             return result;
         }

@@ -13,11 +13,7 @@ namespace BigDataTechnology.DAL
 
         public Worker()
         {
-            //IServiceCollection services = new ServiceCollection();
-            //var DbContextDIService = services.BuildServiceProvider();
-
-            //_dbContext = DbContextDIService.GetService();
-
+            /*başka dbler alınabilirs*/
             _dbContext = new BigDataTechnologyDbContext().Create();
         }
         private IWeatherForecast _weatherForecast { get; set; }

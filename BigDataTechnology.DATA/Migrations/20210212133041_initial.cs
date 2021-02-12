@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BigDataTechnology.DATA.Migrations
 {
-    public partial class MyFirstMigration : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,6 +13,7 @@ namespace BigDataTechnology.DATA.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    RecordDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Location = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     CurrentDateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CurrentTemprature = table.Column<double>(type: "float", nullable: false),

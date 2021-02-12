@@ -7,6 +7,15 @@ namespace BigDataTechnology.Entities
         public enResultCodes ResultCode { get; set; }
         public TObject Object { get; set; }
 
+        public string Description
+        {
+            get {
+                return ResultCode.ToString(); 
+            }
+           
+        }
+
+
     }
     public enum enResultCodes
     {
@@ -77,6 +86,7 @@ namespace BigDataTechnology.Entities
 
         DataCouldNotFound=1001,
         Failed = 1002,
+        EmptyRequest=1003
 
     }
 }

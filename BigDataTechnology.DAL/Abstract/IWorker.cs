@@ -6,6 +6,7 @@ namespace BigDataTechnology.DAL.Abstract
 {
     public interface IWorker : IDisposable
     {
+       
         void SaveChanges();
     }
 }
