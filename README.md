@@ -15,14 +15,12 @@ Gelen sorgu InMemory de varsa hazır veriyi döndürür.
 gelen sorgu Inmemoryde yoksa, veritabanında arama yapar varsa sonucu döndürür.
 gelen sorgu veritabanında yoksa 3.parti lokasyon ve hava durumu servislerini kullanarak sonucu döndürür. 3. parti sorgulaması Middle ware'e koyduğum stopwatch nesnesi ile süre olarak takip edilir. ve bu talep açık olan tüm  Monitoring uygulamasına SignalR aracılığı ile  süre bilgisi ve responsebody ile birlikte gönderilir.
 
-In Memory Yapısı WeatherForecastController.cs 'a gelen her requestin ardından kayıtsayısı e kayıt tarihi gözetilerek Flushlanır.
+In Memory Yapısı WeatherForecastController.cs 'a gelen her requestin ardından kayıtsayısı ve kayıt tarihi gözetilerek Flushlanır.
 
 5-)Monitoring adlı konsol uygulaması, bir signalr ve Http Clienttır.
 ilk açıldığında MonitoringController.cs ' adresine gidip o güne ait tüm kayıtları çeker.
-sonra Signalr'a baglanır. karşılıklı bir mesaj alış-verişinden sonra dinler pozisyonda kalır.
+sonra WebApi de çalışan Signalr'a baglanır. karşılıklı bir mesaj alış-verişinden sonra dinler pozisyonda kalır.
 WepApiye Yeni bir query gelirse bu sonuç süre bilgisi ile birlikte ekranda görülür.
-
-
 
 
 6-)Entitiy Kütüphanesi. Ortak bir kütüphanedir.Tabloları,Modelleri burada tutuyorum. Codefirst kullandığımdan, entityleri direk servisten dışarı vermekte bir sakınca görmedim. DTO nesneleri kullanmadım.
