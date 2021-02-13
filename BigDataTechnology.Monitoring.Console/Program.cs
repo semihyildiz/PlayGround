@@ -55,6 +55,8 @@ namespace BigDataTechnology.Monitoring
 
                 Console.WriteLine("Connected to the Hub on " + _baseurl + "chathub");
 
+                connection.InvokeAsync("TestOk", System.DateTime.Now.ToString());
+
                 connection.On("ReceiveMessage", (string server, string message) =>
                 {
                     Console.WriteLine($"{server}: {message}");

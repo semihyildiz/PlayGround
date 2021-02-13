@@ -40,13 +40,13 @@ namespace BigDataTechnology.WebApi.Middleware
                 if (response.Contains("\"id\":0"))
                 {/*new query*/
                     stopwatch.Stop();
-                    Task.Factory.StartNew(() =>
-                    {
+                    //Task.Factory.StartNew(() =>
+                    //{
                         string Message = "New Request:" + context.Request.QueryString + ", Duration:" + stopwatch.ElapsedMilliseconds.ToString() + " miliseconds.";
 
                         _chatHubDispatcher.SendAllClients(DateTime.Now.ToString("dd:MM:yyyy HH:MM:ss:fff") + Message, response);
-                    });
-                 
+                    //});
+
                 }
                 Task.Factory.StartNew(() =>
                 {

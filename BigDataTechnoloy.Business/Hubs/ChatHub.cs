@@ -10,7 +10,13 @@ namespace BigDataTechnoloy.Business.Hubs
     {
         public override Task OnConnectedAsync()
         {
-            return base.OnConnectedAsync();
+             
+           var result=  base.OnConnectedAsync();
+            return result;
+        }
+        public async Task TestOk(string message)
+        {
+            await Clients.Caller.SendAsync("ReceiveMessage", "Communication","Tested");
         }
         public async Task SendMessage(string user, string message)
         {
