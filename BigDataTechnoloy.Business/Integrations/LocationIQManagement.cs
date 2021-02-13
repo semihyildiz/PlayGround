@@ -4,7 +4,7 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 
-namespace BigDataTechnoloy.Business
+namespace BigDataTechnoloy.Business.Integrations
 {
     public class LocationIQManagement
     {

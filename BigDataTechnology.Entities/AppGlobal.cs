@@ -15,7 +15,7 @@ namespace BigDataTechnology.Entities
         {
             get {
                 if (string.IsNullOrEmpty(_ConnectionString) == true) 
-                {
+                {/*migration farkları için ana veritabanı*/
                     IConfigurationBuilder builder = new ConfigurationBuilder();
                     builder.AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json"));
                     var root = builder.Build();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q2GF3Jvj5pEVto9PM81dJoofi6gOS0AtKiyLGD3hKzbUNEierVgDfj1/v3xScm7F+CAlUVimXmMxwW9jaLgw4A==",
+  "dgSpecHash": "a7dLpg9J54ZrkRkYE2c0e2n2XpiZIbIUrkV5Uoc/2fWvTND0dUSgjeQ4YRmIieiShWFN03TSxHpFiJUjMAkLlg==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.Monitoring.Console\\BigDataTechnology.Monitoring.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,8 @@
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",

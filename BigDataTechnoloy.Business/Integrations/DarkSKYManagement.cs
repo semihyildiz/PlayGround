@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace BigDataTechnoloy.Business
+namespace BigDataTechnoloy.Business.Integrations
 {
     /// <summary>
     /// https://api.darksky.net/forecast/[key]/[latitude],[longitude]

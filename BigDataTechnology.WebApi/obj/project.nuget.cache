@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nyUhc9dLZuT+4c4763KJQ18gaouzC6t/abK/KsFO5lqAqTTRZRtGxq+cqlXRL4CLCNCT2C0R9AK/6Ndau/Du0A==",
+  "dgSpecHash": "SY7arO+MtN3v3E8JrqZqy3WYgSDygzmjsA/LImHVMTrtwqIN95ux1t3VjaSTwn68BUvXR9T71Imf17rEPXh/6A==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\BigDataTechnology\\PlayGround\\BigDataTechnology.WebApi\\BigDataTechnology.WebApi.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.identitymodel.protocols\\5.6.0\\microsoft.identitymodel.protocols.5.6.0.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\5.6.0\\microsoft.identitymodel.protocols.openidconnect.5.6.0.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.6.0\\microsoft.identitymodel.tokens.5.6.0.nupkg.sha512",
+    "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.io.recyclablememorystream\\1.4.0\\microsoft.io.recyclablememorystream.1.4.0.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\s.yildiz.LOCAL\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",

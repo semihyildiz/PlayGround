@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using BigDataTechnology.DAL;
 using BigDataTechnology.DAL.Abstract;
 using System.Threading.Tasks;
+using BigDataTechnoloy.Business.Integrations;
 
 namespace BigDataTechnoloy.Business
 {
@@ -32,7 +33,7 @@ namespace BigDataTechnoloy.Business
                     return result;
                 }
 
-                /*Cashde arama işlemi*/
+                /*Memory arama işlemi*/
                 var InMemoryRecord = InMemory.Get(request);
 
                 if (InMemoryRecord != null)
@@ -43,7 +44,7 @@ namespace BigDataTechnoloy.Business
                 }
 
                 /*dbde arama işlemi(son 24 saatte)*/
-               request.StartDate = DateTime.Now.AddHours(-24);
+                request.StartDate = DateTime.Now.AddHours(-24);
 
                 var existingDbRecord = worker.WeatherForecast.GetWeatherForecast(request).OrderByDescending(c => c.RecordDate).FirstOrDefault();
 
@@ -56,7 +57,7 @@ namespace BigDataTechnoloy.Business
                 }
 
                 /*3. parti servislerden sorgulama*/
-                LocationIQManagement locationMan = new LocationIQManagement();//DI ekle. 
+                LocationIQManagement locationMan = new LocationIQManagement();//TODO DI ekle. 
                 var locations = locationMan.FindLocation(request.Location);
 
                 if (locations.Count == 0)
@@ -65,7 +66,7 @@ namespace BigDataTechnoloy.Business
                     return result;
                 }
 
-                DarkSKYManagement DarkSKYMan = new DarkSKYManagement();/*DI ekle*/
+                DarkSKYManagement DarkSKYMan = new DarkSKYManagement();/*TODO DI ekle*/
                 var darkSky = DarkSKYMan.GetWeatherInfo(locations.FirstOrDefault().lat, locations.FirstOrDefault().lon);
 
                 if (darkSky.daily.data.Count == 0)
@@ -75,6 +76,7 @@ namespace BigDataTechnoloy.Business
                 }
 
 
+                /*Kurumsal Nesnelerimize çevirme*/
                 WeatherForecast forecast = new WeatherForecast();
                 forecast.Location = request.Location;
                 forecast.RecordDate = DateTime.Now;
@@ -88,16 +90,36 @@ namespace BigDataTechnoloy.Business
                 forecast.HighestTempratureInThisWeek = highest.temperatureHigh;
                 forecast.LowestDateTimeInThisWeek = highest.temperatureLowTime.ConvertDateTime();
                 forecast.LowestTempratureInThisWeek = highest.temperatureLow;
-                InMemory.Add(forecast);
+                
 
                 Task.Factory.StartNew(() =>
                 {/*dbye git*/
-                    worker.WeatherForecast.Add(forecast);
+                    forecast=worker.WeatherForecast.Add(forecast);
                     worker.SaveChanges();
+                    InMemory.Add(forecast);
                 });
 
 
                 result.Object = forecast;
+                //result.MiddlewareData = "newQuery";
+                result.ResultCode = enResultCodes.OK;
+            }
+            catch (Exception ex)
+            {//TODO Loglanacak
+
+                result.ResultCode = enResultCodes.Failed;
+            }
+
+            return result;
+        }
+        public Result<List<WeatherForecast>> GetWeatherInformations(WeatherRequest request)
+        {
+            Result<List<WeatherForecast>> result = new Result<List<WeatherForecast>>();
+            try
+            {
+                var existingDbRecord = worker.WeatherForecast.GetWeatherForecast(request).OrderByDescending(c => c.RecordDate).ToList();
+
+                result.Object = existingDbRecord;
                 result.ResultCode = enResultCodes.OK;
             }
             catch (Exception ex)

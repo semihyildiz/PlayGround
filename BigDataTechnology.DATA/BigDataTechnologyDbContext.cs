@@ -37,8 +37,6 @@ namespace BigDataTechnology.DATA
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(AppGlobal.ConnectionString, builder => builder.EnableRetryOnFailure());
-                //optionsBuilder.UseSqlServer("Server=ARGESEMIHYILDIZ\\SQLSERVER2017DEV;Database=BigDataTechnology;User Id=sa;Password=1453;", builder => builder.EnableRetryOnFailure());
-
             }
         }
 

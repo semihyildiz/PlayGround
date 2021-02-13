@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace BigDataTechnology.Entities.Models.Entities
+namespace BigDataTechnology.Monitoring
 {
     public class WeatherForecast
     {
@@ -16,7 +15,7 @@ namespace BigDataTechnology.Entities.Models.Entities
         public double HighestTempratureInThisWeek { get; set; }
         public double LowestTempratureInThisWeek { get; set; }
         public DateTime LowestDateTimeInThisWeek { get; set; }
-        
+
 
     }
 }

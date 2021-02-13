@@ -2,6 +2,7 @@ using BigDataTechnology.DAL;
 using BigDataTechnology.DAL.Abstract;
 using BigDataTechnology.DATA;
 using BigDataTechnology.Entities;
+using BigDataTechnology.WebApi.Middleware;
 using BigDataTechnoloy.Business;
 using BigDataTechnoloy.Business.Hubs;
 using Microsoft.AspNetCore.Builder;
@@ -36,7 +37,7 @@ namespace BigDataTechnology.WebApi
             services.AddSignalR();
             services.AddSingleton<IChatHubDispatcher, ChatHubDispatcher>();
 
-            ///*Migration*/
+            ///*Migration create için*/
             //services.AddDbContext<BigDataTechnologyDbContext>();
 
             services.AddSingleton<Worker>();
@@ -56,13 +57,17 @@ namespace BigDataTechnology.WebApi
             app.UseRouting();
 
             app.UseAuthorization();
+ 
+            app.UseWhen(context => context.Request.Path.Value.Contains("weatherforecast"), appBuilder =>
+            {/*weatherforecast controllerine gelen requestleri middleware'ye yönlendiriyoruz*/
+                appBuilder.UseMiddleware<RequestResponseMiddleware>();
+            });
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<ChatHub>("/chathub");
             });
-
 
         }
     }

@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Text.Json.Serialization;
+using System.Collections.Generic;
+using System.Text;
 
-namespace BigDataTechnology.Entities
+namespace BigDataTechnology.Monitoring
 {
     public class Result<TObject> where TObject : class
     {
         public enResultCodes ResultCode { get; set; }
         public TObject Object { get; set; }
-        //[JsonIgnore]
-        //public string MiddlewareData { get; set; }
 
         public string Description
         {
-            get {
-                return ResultCode.ToString(); 
+            get
+            {
+                return ResultCode.ToString();
             }
-           
+
         }
 
 
@@ -87,9 +87,9 @@ namespace BigDataTechnology.Entities
         UseProxy = 305,
         VariantAlsoNegotiates = 506,
 
-        DataCouldNotFound=1001,
+        DataCouldNotFound = 1001,
         Failed = 1002,
-        EmptyRequest=1003
+        EmptyRequest = 1003
 
     }
 }
