@@ -1,9 +1,12 @@
 # PlayGround
 1-) DATA Katmanı.Burada Veritabanlarını yönetiyoruz.
 bu katmanın appsettings.json dosyasında migration sırasında  base alınacak dbnin connection stringi var.
+
 2-)DAL Katmanında Data Katmanına giden repositoryler var.Generic Repository pattern ve UnitOfWork yapısı bu katmanda yer alıyor.
 bu katmanda Repo methodları  entititylere göre özelleşebiliyor.Bknz. RepWeatherForecast.cs
+
 3-)Bussiness Katmanında yazılım sahibi firmanın iş mantığı bulunmaktadır.teknolojiler değişse bile burdaki iş mantığının bu classLibrary ile taşınabilmesi hedeflenilmektedir.
+
 4-)WebApi Uygulaması=> bu uygulama ile Bussiness katmanının istenilen çıktıları dış dünya ile paylaşılır.
 Dış dünyanın hava durumu istekleri. WeatherForecastController.cs adlı kontrollerda yönetilir. bu kontrolerin requestleri RequestResponseMiddleware.cs middleware'inden geçer. 
 
