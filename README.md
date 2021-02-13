@@ -1,4 +1,4 @@
-# PlayGround
+# StudyCase WeatherForecast
 1-) DATA Katmanı.Burada Veritabanlarını yönetiyoruz.
 bu katmanın appsettings.json dosyasında migration sırasında  base alınacak dbnin connection stringi var.
 
